@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://aaronplayzgaming.com/sitemap.xml
+Sitemap: https://aaronplayz-sys.github.io/sitemap.xml
