@@ -1,97 +1,147 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
+    - name: Name
+      value: Aaron Khan
     - name: Date of Birth
-      value: 14th March 1879
+      value: October 11th 2002
     - name: Languages
-      value: English, German
+      value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Graduate
+      institution: Evans High School, Orlando, FL
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - GPA 4.8 / 4.0
+        - title: Relevant Coursework
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Digital Information Technology
+    - title: Dual enrollment
+      institution: Orange Technical College, Winter Park, FL
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
+        - title: Relevant Coursework
+          contents:
+            - Enterprise Desktop and Mobile Support
+    - title: AS Degree (in progress)
+      institution: Valencia College
+      year: 2022-now
+      description:
+        - title: Relevant Coursework
+          contents:
+            - Cisco Network Essentials
+            - Install and configure Window Server
 
-- title: Experience
+# - title: Experience
+#   type: time_table
+#   contents:
+#     - title: Professor of Theoretical Physics
+#       institution: Institute for Advanced Study, Princeton University
+#       year: 1933 - 1955
+#       description:
+#         - Description 1.
+#         - Description 2.
+#         - title: Description 3.
+#           contents:
+#             - Sub-description 1.
+#             - Sub-description 2.
+#     - title: Visiting Professor
+#       institution: California Institute of Technology, Pasadena, California, US
+#       year: 1933
+#       description:
+#         - Description 1.
+#         - Description 2.
+
+#     - title: Director
+#       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+#       year: 1917-1933
+
+#     - title: Professor of Theoretical Physics
+#       institution: Karl-Ferdinand University, Prague, Czechoslovakia
+#       year: 1911 - 1917
+#       description:
+
+#     - title: Associate Professor of Theoretical Physics
+#       institution: University of Zurich, Zurich, Switzerland
+#       year: 1909 - 1911
+
+- title: Achievements
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: CompTIA ITF+ Certification
+      year: 2021
+      description: CompTIA IT Fundamentals (ITF+) is an introduction to basic IT knowledge and skills.
+    - title: My website aaronplayzgaming.com
+      year: 2020-now
+    - title: ESB (Entrepreneurship and Small Business) Certified
+      year: 2022
+      description: Entrepreneurship and Small Business is a certification from Certiport, sponsored by Intuit and the Network for Teaching Entrepreneurship, that ensures tomorrow's leaders are prepared with the toolkit they need to get ahead in today's competitive landscape.
+    - title: Operations Support and Services
+      year: 2023
+      description: Prepares students for entry level employment in the area of operations support and/or to provide supplemental training for persons previously or currently employed in this area. The content includes but is not limited to communication skills, supervision skills, employability skills, and general business procedures and operation. Issued by Valencia College.
+    - title: Computer Information Technology Specialist
+      year: 2023
+      description: Prepares students with foundation skills in computer maintenance, network essentials and database management. Issued by Valencia College.
+    - title: Computer Information Data Specialist
+      year: 2023
+      description: prepares students with foundation skills in computer maintenance, network essentials and database management. Issued by Valencia College.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: Not Avaliable
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - 2 ND place in STEM competition
+    - year: 2022
       items:
-        - Max Planck Medal
+        - Participation in an AWS + Salesforce Hackathon
+    - year: 2023
+      items:
+        - Inducted into Phi Theta Kappa on October 5th 2023.
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Other Interests
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+
+- title: Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Basic knowledge of HTML
+    - Basic knowledge of Markdown
+    - Basic knowledge of Python
+    - Basic knowledge of JavaScript
+    - Experienced in using Linux
+    - Experienced in using a static site generator
+    - Installation and maintenance of CMS system (e.g., WordPress)
+    - Computer maintenance (e.g., updating drivers)
+    - Installation and maintenance of DNS system (e.g., Pi-hole)
+    - Installation of a reverse proxy server (e.g., Nginx Proxy Manager)
+    - Installation of a cluster (e.g., Proxmox)
+    - Configurating a load balancer in AWS
+    - Configuring a static website in S3 in AWS
+    - Install & configure Windows server 2019
+    - Critical thinking and problem-solving skills using Cisco Packet Tracer
+    - Verify and troubleshoot network and Internet connectivity
+    - Adding a removing object on Active Directory
+    - Install and configure Active Directory Certificate Services
+    - Project Management
+    - Database Management
+    - Web Development
+    - Network Security
+    - VMware Workstation
