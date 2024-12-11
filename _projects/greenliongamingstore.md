@@ -22,9 +22,9 @@ The course also gives you a chance to put all the skills you've learned in previ
 ## Project requirements
 
 - User interface (Front end) - Website (Built in HTML, CSS, and JavaScript). **Do not attempt to build this in Spring Boot, Angular, or similar.**
-- Database - This database has to be developed using SQL, or MySQL, or SQLite, or NoSQL, or MongoDB (No MS Access Database).  You are required to use 00webhost for all hosting.  The free version allows for 1 website, 300MB disk space, and 1 MySQL Database.
-- The website and database must be deployed on a server located in the cloud, or web hosting service.  You are required to use 00webhost for all hosting.  The free version allows for 1 website, 300MB disk space, and 1 MySQL Database
-- Use a repository to store all HTML, CSS, and Javascript code.  **An example of a repository is GitHub**.  00webhost does not allow GitHub integration on the free version.  However, you can still store all your code on GitHub. (Needs to be publically accessible)
+- Database - This database has to be developed using SQL, or MySQL, or SQLite, or NoSQL, or MongoDB (No MS Access Database). You are required to use 00webhost for all hosting. The free version allows for 1 website, 300MB disk space, and 1 MySQL Database.
+- The website and database must be deployed on a server located in the cloud, or web hosting service. You are required to use 00webhost for all hosting. The free version allows for 1 website, 300MB disk space, and 1 MySQL Database
+- Use a repository to store all HTML, CSS, and Javascript code. **An example of a repository is GitHub**. 00webhost does not allow GitHub integration on the free version. However, you can still store all your code on GitHub. (Needs to be publically accessible)
 - Use a project management tool to track all assigned tasks and to track the progress of the application. A Gantt chart needs to be included in every milestone submission. **MS Project is an example.**
 
 ## Problems with these requirements
@@ -43,4 +43,4 @@ When we tried to use MySQL Workbench to connect to our database remotely, we dis
 
 As of now, we've started using the Node.js [Express framework](https://expressjs.com/), which lets us connect a database to the site.
 
-# More information is to be added, Last edited: 11/7/2024 
+# More information is to be added, Last edited: 11/7/2024

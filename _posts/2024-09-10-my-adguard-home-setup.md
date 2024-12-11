@@ -38,7 +38,7 @@ Filter update interval: 24 hours
 > ##### TIP
 >
 > Most lists, including the ones I'm using update once a day.
-{: .block-tip }
+> {: .block-tip }
 
 Optional: Enable AdGuard browsing security web service
 
@@ -48,7 +48,7 @@ Optional: Enable AdGuard parental control web service
 >
 > These web services preforms API lookups on the domains you browse.
 > Do not enable if this is a concern.
-{: .block-warning }
+> {: .block-warning }
 
 Enable log(on by default):
 
@@ -60,7 +60,7 @@ Query logs rotation: 30 days
 >
 > Logs can be handy when needing to whitelist domains.
 > Set the rotation lower if you wish.
-{: .block-tip }
+> {: .block-tip }
 
 Enable statistics (on by default):
 
@@ -70,7 +70,7 @@ Statistics retention: 30 days
 >
 > This keeps track of request made, how many are blocked, etc.
 > It is what is shown on the dashboard page.
-{: .block-tip }
+> {: .block-tip }
 
 <div class="row mt-3"> 
   <div class="col-sm mt-3 mt-md-0"> 
@@ -108,14 +108,14 @@ h3://dns.nextdns.io/
 > ##### TIP
 >
 > h3 is DNS-over-HTTPS with forced HTTP/3 and no fallback to HTTP/2 or below
-{: .block-tip }
+> {: .block-tip }
 
 Set mode to Parallel requests
 
 > ##### TIP
 >
 > This helps to speed up resolving to hit the fastest DNS server
-{: .block-tip }
+> {: .block-tip }
 
 #### Fallback DNS servers:
 
@@ -139,7 +139,7 @@ Set mode to Parallel requests
 > ##### TIP
 >
 > Needed since DNS-over-HTTPS servers are specified for upstream
-{: .block-tip }
+> {: .block-tip }
 
 #### DNS server configuration:
 
@@ -148,7 +148,7 @@ Rate limit: 20 (default)
 > ##### TIP
 >
 > Rate limit is per client/device.
-{: .block-tip }
+> {: .block-tip }
 
 Subnet prefix length for IPv4 addresses: 24 (default)
 
@@ -163,7 +163,7 @@ Blocking mode: Null IP
 > ##### TIP
 >
 > AdGuard Home understands several types of syntax, Null IP ensures what we want blocked is blocked
-{: .block-tip }
+> {: .block-tip }
 
 Blocked response TTL: 10
 
@@ -182,7 +182,7 @@ Enable Optimistic caching
 > ##### TIP
 >
 > I recommend clearing the cache occasionally if loading times feel slow.
-{: .block-tip }
+> {: .block-tip }
 
 #### Access settings:
 
