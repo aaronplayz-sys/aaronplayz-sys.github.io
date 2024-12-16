@@ -26,14 +26,27 @@
         - title: Relevant Coursework
           contents:
             - Enterprise Desktop and Mobile Support
-    - title: AS Degree (in progress)
+    - title: AS Computer Information Technology
       institution: Valencia College
-      year: 2022-now
+      year: 2022-2024
       description:
         - title: Relevant Coursework
           contents:
             - Cisco Network Essentials
             - Install and configure Window Server
+            - IT Capstone
+            - Intro to Customer Service and Help Desk
+            - Database Management Systems
+            - Information Technology Project Management
+            - Intro to Network Security
+            - Web Site Development
+    - title: BAS Computer Technology Cloud Computing
+      institution: Valencia College
+      year: 2025-now
+      description:
+        - title: Relevant Coursework
+          contents:
+            - N/A
 
 # - title: Experience
 #   type: time_table
