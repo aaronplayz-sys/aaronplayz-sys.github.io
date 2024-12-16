@@ -39,8 +39,38 @@ We started out using [InfinityFree](https://www.infinityfree.com/) as our hostin
 
 When we tried to use MySQL Workbench to connect to our database remotely, we discovered that this isn't allowed.
 
-### The solution?
+## The solution?
 
-As of now, we've started using the Node.js [Express framework](https://expressjs.com/), which lets us connect a database to the site.
+We've decided to use Node.js [Express framework](https://expressjs.com/), which lets us connect a database to the site which one of our team member who is letting us use his hosting provider.
 
-# More information is to be added, Last edited: 11/7/2024
+## The Database purpose
+
+Given that our web application is a store, the database purpose is to store Customer login information, hold customer products for checkout and product information such as the Name, price, and thumbnail image.
+
+## Milestone Videos
+
+Per milestone, we had to record, edit, and upload videos to YouTube unlisted as required by our professor.
+
+### Milestone 1
+
+{% include video.liquid path="https://www.youtube.com/embed/YI3X5-655-k" class="img-fluid rounded z-depth-1" %} 
+
+### Milestone 2
+
+{% include video.liquid path="https://www.youtube.com/embed/xlj7Hrj_hmk" class="img-fluid rounded z-depth-1" %} 
+
+### Milestone 3
+
+{% include video.liquid path="https://www.youtube.com/embed/snvX3wrF9mU" class="img-fluid rounded z-depth-1" %} 
+
+### Milestone 4
+
+{% include video.liquid path="https://www.youtube.com/embed/nqI_SaNczjE" class="img-fluid rounded z-depth-1" %} 
+
+## Final presentation
+
+In our final video we had options on how to present our web application. We decided to take aim towards marketing to potential investors.
+
+> Note: The website URL that can be found in the video or GitHub repository may no longer be working as we were using paid services to run the project.
+
+{% include video.liquid path="https://www.youtube.com/embed/6yA5x3Rnsyc" class="img-fluid rounded z-depth-1" %} 
