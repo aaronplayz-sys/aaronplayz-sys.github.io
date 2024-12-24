@@ -100,7 +100,10 @@
       description: Prepares students with foundation skills in computer maintenance, network essentials and database management. Issued by Valencia College.
     - title: Computer Information Data Specialist
       year: 2023
-      description: prepares students with foundation skills in computer maintenance, network essentials and database management. Issued by Valencia College.
+      description: Prepares students with foundation skills in database management. Issued by Valencia College.
+    - title: Customer Service Specialist
+      year: 2024
+      description: Prepares students seeking specialized training to prepare for employment or to enhance their skills in the field of Customer Service. Issued by Valencia College
 
 - title: Honors and Awards
   type: time_table
