@@ -2,7 +2,7 @@
 layout: page
 title: certifications
 permalink: /certs/
-description: All certifications & awards I have obtained.
+description: All certifications & awards I have obtained. Only digital certs are displayed here.
 nav: false
 nav_order: 6
 horizontal: false
