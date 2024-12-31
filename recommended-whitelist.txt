@@ -1,0 +1,110 @@
+! Last modified: 10/10/2023
+! Note: This is updated as needed for my personal usage.
+!
+! These are domains (or websites) that I believe that should be whitelisted incase of false positive('s).
+! Please feel free to change or modify this list to your liking.
+!
+! Link Shortners
+@@||t.ly^*
+@@||www.bit.ly^*
+@@||tinyurl.com^*
+! EA/Origin (content delivery & cloudsync(savegame-sync))
+@@||cdn.optimizely.com^*
+@@||cdn2.optimizely.com^*
+@@||cdn3.optimizely.com^*
+@@||cloudsync-prod.s3.amazonaws.com^*
+! Shopify (blocked in some lists)
+@@||s.shopify.com^*
+! Amazon AWS 
+@@||amazonaws.com^*
+@@||s3.amazonaws.com^*
+! cloudflare
+@@||cdnjs.cloudflare.com^*
+@@||cdn.cloudflare.net^*
+! Github
+@@||github.com^*
+@@||github.io^*
+! Microsoft login related
+@@||live.com^*
+@@||g.live.com^*
+@@||login.live.com^*
+@@||login.microsoftonline.com^*
+@@||notify.xboxlive.com^*
+@@||office.com^*
+@@||office.net^*
+@@||office365.com^*
+@@||officeclient.microsoft.com^*
+@@||onedrive.live.com^*
+@@||outlook.live.com^*
+@@||outlook.office365.com^*
+@@||www.msftconnecttest.com^*
+! Allow doubleclick clickthrough (ios)
+@@||ad.doubleclick.net/ddm/clk/$domain=ad.doubleclick.net
+! Fix nordpass/protomail clickthrough on ios
+@@/aff_c?offer_id=
+@@?offer_id=*&aff_id=
+! uBO-redirect work around wyse.com (https://github.com/uBlockOrigin/uAssets/commit/7ee72dd4d6a641c040b9098f11006cb6c53b05ba)
+@@||wyze.com^$script,first-party
+! Broken search on https://www.capitalone.com/search
+@@||nexus.ensighten.com/capitalone/Bootstrap.js$script,domain=capitalone.com
+! Trustpilot
+@@||widget.trustpilot.com^*
+! brave.com specfic filters
+@@||ads.brave.software^$first-party
+@@||ads-admin.bravesoftware.com^$first-party
+@@||ads.bravesoftware.com^$first-party
+@@||search.brave.com/api/$first-party
+@@||ads-admin.brave.com^$first-party
+@@||ads-admin.brave.software^$first-party
+@@||ads.brave.com^$first-party
+@@||brave.com^$image,stylesheet,first-party
+! Stream provider: Streamtape (Blocked by StevenBlack)
+@@||streamtape.com^*
+! World of tanks (some lists prevents images and updates from being fetched)
+@@||wguscs-wotcom.wargaming.net^*
+@@||static-wguscs-wotcom.wargaming.net^*
+@@||wguscs-wgcna.wargaming.net^*
+! Banking
+@@||hscoscdn20.net^*
+! fmovies (a trustworthy movie & show streaming site)
+@@||fmovies.to^*
+! One Drive (short domain) (blocked by OSID full)
+@@||1drv.ms^*
+! Allow Twitter links
+@@||www.t.com^*
+@@||t.co^*
+! Other/Uncatagorized stuff
+@@||track.honorsocietymail.org^*
+@@||ndg106.infusionsoft.com^*
+@@||play.pretzel.rocks^*
+@@||cdn.cookielaw.org^*
+! Facebook/Instagram
+@@||graph.facebook.com^*
+@@||graph.instagram.com^*
+@@||i.instagram.com^*
+@@||b-graph.facebook.com^*
+! Apple
+@@||xp.apple.com^*
+@@||smoot.apple.com^*
+@@||amp-api-edge.apps.apple.com^*
+@@||amp-api-search-edge.apps.apple.com^*
+! Windows
+@@||settings-win.data.microsoft.com^*
+! Xiaomi (for device updates)
+@@||update.intl.miui.com^*
+! Nest
+@@||logsink.devices.nest.com^*
+! Zoom
+@@||logfiles.zoom.us^*
+@@||us04logfiles.zoom.us^*
+@@||us04zpns.zoom.us^*
+! YouTube history
+@@||s.youtube.com^*
+!epic games launcher
+@@||eulatracking-public-service-prod06.ol.epicgames.com^*
+! Netlify (some lists breaks viewing of dashboard)
+@@||netlify-rum.netlify.app^*
+! raspberrypi.org archive (Adguard Home Parental Control for some reason blocks this) (fix updates on raspberrypi)
+@@||archive.raspberrypi.org^*
+! Adguard email link redirect
+@@||email-link.adtidy.org^*
