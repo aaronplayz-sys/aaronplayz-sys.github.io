@@ -38,7 +38,7 @@ There are many ways to set up AdGuard Home as there a few ways to block and whit
 > ##### TIP
 >
 > Most lists, including the ones I'm using update once a day.
-> {: .block-tip }
+{: .block-tip }
 
 Filter update interval: 24 hours
 
@@ -46,7 +46,7 @@ Filter update interval: 24 hours
 >
 > These web services preforms API lookups on the domains you browse.
 > Do not enable if this is a concern.
-> {: .block-warning }
+{: .block-warning }
 
 Optional: Enable AdGuard browsing security web service
 
@@ -56,7 +56,7 @@ Optional: Enable AdGuard parental control web service
 >
 > Logs can be handy when needing to whitelist domains.
 > Set the rotation lower if you wish.
-> {: .block-tip }
+{: .block-tip }
 
 Enable log(on by default):
 
@@ -68,7 +68,7 @@ Query logs rotation: 30 days
 >
 > This keeps track of request made, how many are blocked, etc.
 > It is what is shown on the dashboard page.
-> {: .block-tip }
+{: .block-tip }
 
 Enable statistics (on by default):
 
@@ -98,7 +98,7 @@ Statistics retention: 30 days
 > ##### TIP
 >
 > h3 is DNS-over-HTTPS with forced HTTP/3 and no fallback to HTTP/2 or below
-> {: .block-tip }
+{: .block-tip }
 
 ```bash
 h3://dns.cloudflare.com/dns-query
@@ -115,7 +115,8 @@ h3://dns.nextdns.io/
 > ##### TIP
 >
 > This helps to speed up resolving to hit the fastest DNS server
-> {: .block-tip }
+{: .block-tip }
+
 
 Set mode to Parallel requests
 
@@ -128,7 +129,7 @@ Leave this entry empty, servers listed above will be used to reolve DNS requests
 > ##### TIP
 >
 > Needed since DNS-over-HTTPS servers are specified for upstream
-> {: .block-tip }
+{: .block-tip }
 
 ```bash
 1.1.1.1
@@ -152,7 +153,7 @@ Leave this entry empty, servers listed above will be used to reolve DNS requests
 > ##### TIP
 >
 > Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. I use 1000 because it is near impossible to it when deploying this in a public setting like at an office or running a homelab.
-> {: .block-tip }
+{: .block-tip }
 
 Rate limit: 1000
 
@@ -167,7 +168,7 @@ Enable DNSSEC
 > ##### TIP
 >
 > AdGuard Home understands several types of syntax, Null IP ensures what we want blocked is blocked
-> {: .block-tip }
+{: .block-tip }
 
 Blocking mode: Null IP
 
@@ -188,7 +189,7 @@ Enable Optimistic caching
 > ##### TIP
 >
 > I recommend clearing the cache occasionally if loading times feel slow.
-> {: .block-tip }
+{: .block-tip }
 
 #### Access settings:
 
