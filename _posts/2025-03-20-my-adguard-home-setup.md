@@ -122,7 +122,7 @@ Set mode to Parallel requests
 
 #### Fallback DNS servers:
 
-Leave this entry empty, servers listed above will be used to reolve DNS requests
+Leave this entry empty, servers listed above will be used to resolve DNS requests
 
 #### Bootstrap DNS servers:
 
@@ -152,7 +152,7 @@ Leave this entry empty, servers listed above will be used to reolve DNS requests
 
 > ##### TIP
 >
-> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. I use 1000 because it is near impossible to it when deploying this in a public setting like at an office or running a homelab.
+> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. I use 1000 because it is near impossible to hit this limit when deploying this in a public setting like at an office or running a homelab.
 {: .block-tip }
 
 Rate limit: 1000
@@ -273,7 +273,7 @@ Go ahead and put a checkmark on the following:
 
 These lists should give you an overall good protection against ads, trackers, and malware. However, **not all ads** can be **blocked at the DNS level**. You will need a extension/addon to take care of the ads that aren't blocked by AdGuard Home.
 
-If you use Firefox or any fork you can use yokoffing filterlists guide for a great uBlock Origin setup. [Link to guide.](https://github.com/yokoffing/filterlists#guidelines)
+If you use Firefox or any fork you can use yokoffing filterlists guide for a great uBlock Origin setup. [Link to guide](https://github.com/yokoffing/filterlists#guidelines).
 
 If using chrome, I recommend you consider Brave browser. Which has a built in ad-blocker.
 
