@@ -1,4 +1,4 @@
-! Last modified: 10/10/2023
+! Last modified: 2/18/2025
 ! Note: This is updated as needed for my personal usage.
 !
 ! These are domains (or websites) that I believe that should be whitelisted incase of false positive('s).
@@ -58,8 +58,6 @@
 @@||ads-admin.brave.software^$first-party
 @@||ads.brave.com^$first-party
 @@||brave.com^$image,stylesheet,first-party
-! Stream provider: Streamtape (Blocked by StevenBlack)
-@@||streamtape.com^*
 ! World of tanks (some lists prevents images and updates from being fetched)
 @@||wguscs-wotcom.wargaming.net^*
 @@||static-wguscs-wotcom.wargaming.net^*
@@ -108,3 +106,7 @@
 @@||archive.raspberrypi.org^*
 ! Adguard email link redirect
 @@||email-link.adtidy.org^*
+@@||links.h6.hilton.com^*
+@@||victoriassecret.com^*
+@@||discord.red^*
+@@||open.lib.umn.edu^*
