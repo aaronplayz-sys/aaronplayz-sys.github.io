@@ -1,13 +1,15 @@
 ---
 layout: post
 title: My Adguard Home DNS Setup
-date: 2024-09-12
+date: 2025-03-20
 description: For a while I have been expeirmenting my configurations, now I feel like sharing my journey and my configurations.
 tags: Linux, DNS
 categories: posts
 toc:
   sidebar: left
 ---
+
+> This post was originally posted on September 12, 2024. This is updated to include new settings.
 
 ## My start with DNS servers
 
@@ -29,26 +31,32 @@ Since AdGuard Home is a self-host solution, you have more control over what it c
 
 ## My configuration
 
-There are many ways to set up AdGuard Home as there a few ways to block and whitelist domains. I have closely followed yokoffing's guide on [NextDNS-Config](https://github.com/yokoffing/NextDNS-Config) as a based for filters. The rest of my config was inspired from Reddit posts I saw and experimenting with settings.
+There are many ways to set up AdGuard Home as there a few ways to block and whitelist domains. I have closely followed yokoffing's guide on [NextDNS-Config](https://github.com/yokoffing/NextDNS-Config) as a based for filters. The rest of my config was inspired from Reddit posts I saw and experimenting with settings. Any area that I do not cover should be left alone at the default.
 
 ### General settings
-
-Filter update interval: 24 hours
 
 > ##### TIP
 >
 > Most lists, including the ones I'm using update once a day.
-{: .block-tip }
+> {: .block-tip }
 
-Optional: Enable AdGuard browsing security web service
-
-Optional: Enable AdGuard parental control web service
+Filter update interval: 24 hours
 
 > ##### WARNING
 >
 > These web services preforms API lookups on the domains you browse.
 > Do not enable if this is a concern.
-{: .block-warning }
+> {: .block-warning }
+
+Optional: Enable AdGuard browsing security web service
+
+Optional: Enable AdGuard parental control web service
+
+> ##### TIP
+>
+> Logs can be handy when needing to whitelist domains.
+> Set the rotation lower if you wish.
+> {: .block-tip }
 
 Enable log(on by default):
 
@@ -58,19 +66,13 @@ Query logs rotation: 30 days
 
 > ##### TIP
 >
-> Logs can be handy when needing to whitelist domains.
-> Set the rotation lower if you wish.
-{: .block-tip }
+> This keeps track of request made, how many are blocked, etc.
+> It is what is shown on the dashboard page.
+> {: .block-tip }
 
 Enable statistics (on by default):
 
 Statistics retention: 30 days
-
-> ##### TIP
->
-> This keeps track of request made, how many are blocked, etc.
-> It is what is shown on the dashboard page.
-{: .block-tip }
 
 <div class="row mt-3"> 
   <div class="col-sm mt-3 mt-md-0"> 
@@ -93,6 +95,11 @@ Statistics retention: 30 days
 
 #### Upstream DNS servers:
 
+> ##### TIP
+>
+> h3 is DNS-over-HTTPS with forced HTTP/3 and no fallback to HTTP/2 or below
+> {: .block-tip }
+
 ```bash
 h3://dns.cloudflare.com/dns-query
 h3://1.1.1.1/dns-query
@@ -107,23 +114,21 @@ h3://dns.nextdns.io/
 
 > ##### TIP
 >
-> h3 is DNS-over-HTTPS with forced HTTP/3 and no fallback to HTTP/2 or below
-{: .block-tip }
+> This helps to speed up resolving to hit the fastest DNS server
+> {: .block-tip }
 
 Set mode to Parallel requests
 
-> ##### TIP
->
-> This helps to speed up resolving to hit the fastest DNS server
-{: .block-tip }
-
 #### Fallback DNS servers:
 
-```bash
-9.9.9.9
-```
+Leave this entry empty, servers listed above will be used to reolve DNS requests
 
 #### Bootstrap DNS servers:
+
+> ##### TIP
+>
+> Needed since DNS-over-HTTPS servers are specified for upstream
+> {: .block-tip }
 
 ```bash
 1.1.1.1
@@ -136,19 +141,20 @@ Set mode to Parallel requests
 2a10:50c0::2:ff
 ```
 
-> ##### TIP
->
-> Needed since DNS-over-HTTPS servers are specified for upstream
-{: .block-tip }
+#### Upstream timeout
+
+```bash
+1000
+```
 
 #### DNS server configuration:
 
-Rate limit: 20 (default)
-
 > ##### TIP
 >
-> Rate limit is per client/device.
-{: .block-tip }
+> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. I use 1000 because it is near impossible to it when deploying this in a public setting like at an office or running a homelab.
+> {: .block-tip }
+
+Rate limit: 1000
 
 Subnet prefix length for IPv4 addresses: 24 (default)
 
@@ -158,12 +164,12 @@ Subnet prefix length for IPv6 addresses: 56 (default)
 
 Enable DNSSEC
 
-Blocking mode: Null IP
-
 > ##### TIP
 >
 > AdGuard Home understands several types of syntax, Null IP ensures what we want blocked is blocked
-{: .block-tip }
+> {: .block-tip }
+
+Blocking mode: Null IP
 
 Blocked response TTL: 10
 
@@ -182,13 +188,13 @@ Enable Optimistic caching
 > ##### TIP
 >
 > I recommend clearing the cache occasionally if loading times feel slow.
-{: .block-tip }
+> {: .block-tip }
 
 #### Access settings:
 
 Feel free to utilize this section, can be handy if the DNS server is reachable from outside your local network.
 
-Leave version.bind, id.server, and hostname.bind filled in the disallowed domains section.
+Leave version.bind, id.server, and hostname.bind filled in the disallowed domains section. Do not add webite URLs to be blocked here, it won't be tracked for statistics.
 
 <div class="row mt-3"> 
   <div class="col-sm mt-3 mt-md-0"> 
@@ -221,7 +227,22 @@ This setting is particularly useful if you want to customize blocked services, s
 
 ### DHCP settings
 
-I do not personally utilize this feature in particular. You can learn more about it at [https://github.com/AdguardTeam/AdGuardHome/wiki/DHCP](https://github.com/AdguardTeam/AdGuardHome/wiki/DHCP)
+It is only recommeded to use this feature if your router like ones from AT&T, it can be benefital to use this to get around this roadblock of havig to configure every device on your network.
+
+#### DHCP IPv4 Settings
+
+Gateway IP: You would use your routers IP here in my case with an AT&T hardware it is 192.168.1.254. The software should have it correctly listed on the page.
+
+Range of IP addresses: 192.168.1.64 - 192.168.2.253
+You can use whatever range you like, just make sure your subnet mask is correct for the range
+
+Subnet mask: 255.255.255.0
+
+DHCP lease time (in seconds): 86400
+
+#### DHCP IPv6 Settings
+
+Here you can pick your range, if you are using an AT&T gateway like me, you need to disable DHCP for both IPv4 and IPv6 so that Adguard Home is the only one advertising DHCP for all devices.
 
 ## Filters
 
@@ -247,8 +268,13 @@ Go ahead and put a checkmark on the following:
 - WindowsSpyBlocker
 - Dandilion Sprout's Anti-Malware List
 - HaGeZi's Threat Intelligence Feeds
+- Phishing URL Blocklist (PhishTank and OpenPhish)
 
 These lists should give you an overall good protection against ads, trackers, and malware. However, **not all ads** can be **blocked at the DNS level**. You will need a extension/addon to take care of the ads that aren't blocked by AdGuard Home.
+
+If you use Firefox or any fork you can use yokoffing filterlists guide for a great uBlock Origin setup. [Link to guide.](https://github.com/yokoffing/filterlists#guidelines)
+
+If using chrome, I recommend you consider Brave browser. Which has a built in ad-blocker.
 
 ### DNS allowlists
 
@@ -296,6 +322,8 @@ Wanted to know where your selection goes when you unblock or block a domain from
 ||syndication.twitter.com^
 ||events.gfe.nvidia.com^
 ||mask.icloud.com^
+||mask-h2.icloud.com^
+||mask-canary.icloud.com^
 ```
 
 ## Wrap up
@@ -308,4 +336,6 @@ AdguardTeam. (2023a, April 18). DHCP. GitHub. https://github.com/AdguardTeam/AdG
 
 AdguardTeam. (2023b, August 30). Encryption. GitHub. https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption
 
-yokoffing. (2022). GitHub - yokoffing/NextDNS-Config: Setup guide for NextDNS, a DoH proxy with advanced capabilities. GitHub. https://github.com/yokoffing/NextDNS-Config
+yokoffing. (2022). Setup guide for NextDNS, a DoH proxy with advanced capabilities. GitHub. https://github.com/yokoffing/NextDNS-Config
+
+yokoffing. (2022). Setup guide for NextDNS, a DoH proxy with advanced capabilities. GitHub. https://github.com/yokoffing/NextDNS-Config
