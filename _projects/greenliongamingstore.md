@@ -53,19 +53,19 @@ Per milestone, we had to record, edit, and upload videos to YouTube unlisted as 
 
 ### Milestone 1
 
-{% include video.liquid path="https://www.youtube.com/embed/YI3X5-655-k" class="img-fluid rounded z-depth-1" %} 
+{% include video.liquid path="https://www.youtube.com/embed/YI3X5-655-k" class="img-fluid rounded z-depth-1" %}
 
 ### Milestone 2
 
-{% include video.liquid path="https://www.youtube.com/embed/xlj7Hrj_hmk" class="img-fluid rounded z-depth-1" %} 
+{% include video.liquid path="https://www.youtube.com/embed/xlj7Hrj_hmk" class="img-fluid rounded z-depth-1" %}
 
 ### Milestone 3
 
-{% include video.liquid path="https://www.youtube.com/embed/snvX3wrF9mU" class="img-fluid rounded z-depth-1" %} 
+{% include video.liquid path="https://www.youtube.com/embed/snvX3wrF9mU" class="img-fluid rounded z-depth-1" %}
 
 ### Milestone 4
 
-{% include video.liquid path="https://www.youtube.com/embed/nqI_SaNczjE" class="img-fluid rounded z-depth-1" %} 
+{% include video.liquid path="https://www.youtube.com/embed/nqI_SaNczjE" class="img-fluid rounded z-depth-1" %}
 
 ## Final presentation
 
@@ -73,4 +73,4 @@ In our final video we had options on how to present our web application. We deci
 
 > Note: The website URL that can be found in the video or GitHub repository may no longer be working as we were using paid services to run the project.
 
-{% include video.liquid path="https://www.youtube.com/embed/6yA5x3Rnsyc" class="img-fluid rounded z-depth-1" %} 
+{% include video.liquid path="https://www.youtube.com/embed/6yA5x3Rnsyc" class="img-fluid rounded z-depth-1" %}
