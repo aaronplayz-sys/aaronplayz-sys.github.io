@@ -4,11 +4,5 @@
     "eslint-config-prettier": "^9.1.0",
     "git-format-staged": "^3.1.1",
     "prettier": "3.1.1"
-  },
-  "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
-  },
-  "scripts": {
-    "prepare": "husky install"
   }
 }
