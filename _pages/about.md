@@ -6,8 +6,8 @@ subtitle: A chill dude who likes to tinker and explore tech.
 
 profile:
   align: right
-  image: 1646861196357.png
-  image_circular: true # crops the image to make it circular
+  image: pic.jpg
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Orlando, Florida USA</p>
 
