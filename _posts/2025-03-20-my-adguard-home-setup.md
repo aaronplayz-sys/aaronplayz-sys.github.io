@@ -220,12 +220,6 @@ Any list specified here will block the domains that are listed.
 
 Some of these lists can be added by clicking the "Add blocklist" then click "Choose from the list"
 
-{% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/Blocklist-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-<div class="caption">
-  When you click "Add blocklist" Select "Choose from the list"
-</div>
-
 Lucky for us the lists I am using are in this list.
 
 Go ahead and put a checkmark on the following:
