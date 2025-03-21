@@ -74,21 +74,6 @@ Enable statistics (on by default):
 
 Statistics retention: 30 days
 
-<div class="row mt-3"> 
-  <div class="col-sm mt-3 mt-md-0"> 
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/General-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/General-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/General-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-</div>
-<div class="caption"> 
-  Screenshot's for reference
-</div>
-
 ## Settings
 
 ### DNS settings
@@ -197,26 +182,6 @@ Feel free to utilize this section, can be handy if the DNS server is reachable f
 
 Leave version.bind, id.server, and hostname.bind filled in the disallowed domains section. Do not add webite URLs to be blocked here, it won't be tracked for statistics.
 
-<div class="row mt-3"> 
-  <div class="col-sm mt-3 mt-md-0"> 
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/DNS-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/DNS-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/DNS-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/DNS-4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/adguard-home-setup/DNS-5.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-</div>
-<div class="caption"> 
-  Screenshot's for reference
-</div>
 
 ### Encryption settings
 
