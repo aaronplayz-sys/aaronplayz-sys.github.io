@@ -41,8 +41,8 @@ Knowing how I made personal website all by myself, I said screw their opinions d
 - [x] Create Credits Page (8/6/2025)
 - [x] Create Terminology Page (8/6/2025)
 - [ ] Pilot Guides
-  - [ ] Universal Mechanics Abilities
-  - [ ] Primary and Sidearm
+  - [x] Universal Mechanics Abilities (8/11/2025)
+  - [x] Primary and Sidearm (8/12/2025)
   - [ ] Anti Titan Weapons
   - [ ] Weapon Mods and Sights
   - [ ] Tactical
