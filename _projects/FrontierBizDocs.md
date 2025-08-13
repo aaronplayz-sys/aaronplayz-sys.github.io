@@ -27,8 +27,6 @@ Slowly as we completed one page at a time, we created a new discord channel...
 
 And now it's an issue. Too many channels is the discord server, making it feel crowded.
 
-[Inservt image]
-
 Took almost 2 years in the making all of these guides filled with information with suggestions, aimed to aid both new players and veterans of titianfall 2. Though I was the [only editor], and the only one who saw it that way.
 
 ## Took matters into my own hands
@@ -43,9 +41,9 @@ Knowing how I made personal website all by myself, I said screw their opinions d
 - [ ] Pilot Guides
   - [x] Universal Mechanics Abilities (8/11/2025)
   - [x] Primary and Sidearm (8/12/2025)
-  - [ ] Anti Titan Weapons
-  - [ ] Weapon Mods and Sights
-  - [ ] Tactical
+  - [x] Anti Titan Weapons (8/13/2025)
+  - [x] Weapon Mods and Sights (8/13/2025)
+  - [x] Tactical (8/13/2025)
   - [ ] Ordnance
   - [ ] Kit
   - [ ] Economy and Armory
