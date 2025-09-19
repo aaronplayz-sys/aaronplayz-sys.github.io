@@ -38,7 +38,7 @@ Knowing how I made personal website all by myself, I said screw their opinions d
 - [x] Create Home Page (8/5/2025)
 - [x] Create Credits Page (8/6/2025)
 - [x] Create Terminology Page (8/6/2025)
-- [ ] Pilot Guides
+- [x] Pilot Guides (completed on 9/19/2025)
   - [x] Universal Mechanics Abilities (8/11/2025)
   - [x] Primary and Sidearm (8/12/2025)
   - [x] Anti Titan Weapons (8/13/2025)
@@ -49,11 +49,11 @@ Knowing how I made personal website all by myself, I said screw their opinions d
   - [x] Economy and Armory (9/17/2025)
   - [x] Movement (9/17/2025)
   - [x] Loadout (9/18/2025)
-  - [ ] Rodeo
-  - [ ] Battery Farming
-  - [ ] Pilot Only
-  - [ ] Leveling Weapons
-  - [ ] Boost
+  - [x] Rodeo (9/19/2025)
+  - [x] Battery Farming (9/19/2025)
+  - [x] Pilot Only (9/19/2025)
+  - [x] Leveling Weapons (9/19/2025)
+  - [x] Boost (9/19/2025)
 - [ ] Titan Guides
     - [ ] Universal Mechanics Abilities
     - [ ] Titainfall and Their Kits
