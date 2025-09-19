@@ -28,9 +28,6 @@ I am Aaron Khan, currently a student at Valencia College pursuing a degree in BA
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/badges/aws-cloud-quest-cloud-practitioner.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-</div>
-
-<div class="row mt-3"> 
     <div class="col-sm mt-3 mt-md-0"> 
         {% include figure.liquid path="assets/img/badges/aws-academy-graduate-aws-academy-cloud-architecting.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>

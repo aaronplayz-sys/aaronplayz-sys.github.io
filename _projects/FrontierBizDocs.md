@@ -2,7 +2,7 @@
 layout: page
 title: Frontier Biz Guide Website
 description:
-img: assets/img/robocop.png
+img: assets/img/fbiz.png
 importance: 6
 category: Other
 ---
@@ -44,11 +44,11 @@ Knowing how I made personal website all by myself, I said screw their opinions d
   - [x] Anti Titan Weapons (8/13/2025)
   - [x] Weapon Mods and Sights (8/13/2025)
   - [x] Tactical (8/13/2025)
-  - [ ] Ordnance
-  - [ ] Kit
-  - [ ] Economy and Armory
-  - [ ] Movement
-  - [ ] Loadout
+  - [x] Ordnance (8/14/2025)
+  - [x] Kit (8/14/2025)
+  - [x] Economy and Armory (9/17/2025)
+  - [x] Movement (9/17/2025)
+  - [x] Loadout (9/18/2025)
   - [ ] Rodeo
   - [ ] Battery Farming
   - [ ] Pilot Only
