@@ -9,7 +9,7 @@ category: Other
 
 ## Frontier Biz Guide Website Link
 
-[https://aaronplayzgaming.com/frontier-biz/](https://aaronplayzgaming.com/frontier-biz/credits/)
+[https://aaronplayzgaming.com/frontier-biz/](https://aaronplayzgaming.com/frontier-biz/)
 
 Repository: [https://github.com/aaronplayz-sys/frontier-biz/tree/main](https://github.com/aaronplayz-sys/frontier-biz/tree/main)
 
@@ -27,11 +27,17 @@ Slowly as we completed one page at a time, we created a new discord channel...
 
 And now it's an issue. Too many channels is the discord server, making it feel crowded.
 
-Took almost 2 years in the making all of these guides filled with information with suggestions, aimed to aid both new players and veterans of titianfall 2. Though I was the [only editor], and the only one who saw it that way.
+Took almost 2 years in the making all of these guides filled with information with suggestions, aimed to aid both new players and veterans of TitanFall 2. Though I was the [only editor], and the only one who saw it that way.
 
 ## Took matters into my own hands
 
 Knowing how I made personal website all by myself, I said screw their opinions do it myself show it off to them when it is done.
+
+## October Update
+
+I have spoken to Jackson, it has been agreed together that a website is way better for both readability and preservation. Once all information regard to the guides are complete many discord channels will be archived any only visible to anyone with the author role.
+
+It also turned out that others in our community (full disclosure I am considered as a co-owner) wanted an alternative way to read our work. Instead of this being a little rebel project, its completion is now a community milestone.
 
 ## Progress
 
@@ -54,22 +60,22 @@ Knowing how I made personal website all by myself, I said screw their opinions d
   - [x] Pilot Only (9/19/2025)
   - [x] Leveling Weapons (9/19/2025)
   - [x] Boost (9/19/2025)
-- [ ] Titan Guides
-    - [ ] Universal Mechanics Abilities
-    - [ ] Titainfall and Their Kits
-    - [ ] Titan Kit
-    - [ ] Aegis
-    - [ ] Titan survivability
-    - [ ] Ion
-    - [ ] Scorch
-    - [ ] Northstar
-    - [ ] Ronin
-    - [ ] Tone
-    - [ ] Legion
-    - [ ] Monarch
+- [x] Titan Guides (Section completed on 10/12/2025)
+    - [x] Universal Mechanics Abilities
+    - [x] Titainfall and Their Kits
+    - [x] Titan Kit
+    - [x] Aegis
+    - [x] Titan survivability
+    - [x] Ion
+    - [x] Scorch
+    - [x] Northstar
+    - [x] Ronin
+    - [x] Tone
+    - [x] Legion
+    - [x] Monarch
 - [ ] Frontier Defense Enemy Guides
-  - [ ] Enemy Guide Terms
-  - [ ] Universal Mechanics Abilities
+  - [x] Enemy Guide Terms (10/13/2025)
+  - [x] Universal Mechanics Abilities (10/13/2025)
   - [ ] Threat Tier List
   - [ ] Grunt
   - [ ] Tick
@@ -89,7 +95,7 @@ Knowing how I made personal website all by myself, I said screw their opinions d
   - [ ] Legion
   - [ ] Nuke Titan
   - [ ] Monarch
-- [ ] Fronteir Defense Map Guides
+- [ ] Frontier Defense Map Guides
   - [ ] Minimap guide
   - [ ] Map Legend
   - [ ] Difficulty Guide
@@ -103,6 +109,5 @@ Knowing how I made personal website all by myself, I said screw their opinions d
   - [ ] War Games
   - [ ] Rise
   - [ ] Multiplayer Map Callouts
-
 
 [only editor]: https://aaronplayzgaming.com/frontier-biz/credits/
