@@ -33,11 +33,15 @@ Took almost 2 years in the making all of these guides filled with information wi
 
 Knowing how I made personal website all by myself, I said screw their opinions do it myself show it off to them when it is done.
 
-## October Update
+## October 2025 Update
 
 I have spoken to Jackson, it has been agreed together that a website is way better for both readability and preservation. Once all information regard to the guides are complete many discord channels will be archived any only visible to anyone with the author role.
 
 It also turned out that others in our community (full disclosure I am considered as a co-owner) wanted an alternative way to read our work. Instead of this being a little rebel project, its completion is now a community milestone.
+
+## December 2025 Update
+
+ All guides are written, some are pending to be rewritten and reviewed, mainly the map guides. Most guide channels in the Discord server have been moved to an archived category and will be deleted once guide creation is considered complete. Finally, the website is the offical way to read our guides.
 
 ## Progress
 
@@ -76,25 +80,25 @@ It also turned out that others in our community (full disclosure I am considered
 - [ ] Frontier Defense Enemy Guides
   - [x] Enemy Guide Terms (10/13/2025)
   - [x] Universal Mechanics Abilities (10/13/2025)
-  - [ ] Threat Tier List
-  - [ ] Grunt
-  - [ ] Tick
-  - [ ] Mortar Specter
-  - [ ] Plasma Drone
-  - [ ] Stalker
-  - [ ] Cloak Drone
-  - [ ] Reaper
-  - [ ] Ion
-  - [ ] Scorch
-  - [ ] Northstar Sniper
-  - [ ] Ronin
-  - [ ] Arc Titan
-  - [ ] Tone
-  - [ ] Tone Sniper
-  - [ ] Motar Titan
-  - [ ] Legion
-  - [ ] Nuke Titan
-  - [ ] Monarch
+  - [x] Threat Tier List (10/15/2025)
+  - [x] Grunt (10/15/2025)
+  - [x] Tick (10/15/2025)
+  - [x] Mortar Specter (10/15/2025)
+  - [x] Plasma Drone (10/15/2025)
+  - [x] Stalker (10/15/2025)
+  - [x] Cloak Drone (10/15/2025)
+  - [x] Reaper (10/15/2025)
+  - [x] Ion (10/16/2025)
+  - [x] Scorch (10/16/2025)
+  - [x] Northstar Sniper (10/16/2025)
+  - [x] Ronin (10/16/2025)
+  - [x] Arc Titan (10/16/2025)
+  - [x] Tone (10/16/2025)
+  - [x] Tone Sniper
+  - [x] Motar Titan
+  - [x] Legion
+  - [x] Nuke Titan
+  - [x] Monarch
 - [ ] Frontier Defense Map Guides
   - [ ] Minimap guide
   - [ ] Map Legend
