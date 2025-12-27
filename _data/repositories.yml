@@ -1,8 +1,14 @@
 github_users:
-  - aaronplayz-sys
+  - torvalds
+  - alshedivat
+
+repo_description_lines_max: 2
 
 github_repos:
   - alshedivat/al-folio
-  - aaronplayz-sys/RoboCop
-  - aaronplayz-sys/ranger
-  - aaronplayz-sys/aquaclan-modpack
+  - jekyll/jekyll
+  - twbs/bootstrap
+  - jquery/jquery
+  - FortAwesome/Font-Awesome
+  - mathjax/MathJax
+  - jpswalsh/academicons
