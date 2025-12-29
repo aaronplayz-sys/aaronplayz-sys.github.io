@@ -1,6 +1,6 @@
 FROM ruby:3.4.2-slim
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 LABEL authors="aaronplayz-sys" \
       description="Docker image for Frontier Biz guides (Dev & Prod)" \
