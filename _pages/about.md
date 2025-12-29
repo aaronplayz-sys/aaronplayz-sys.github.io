@@ -2,18 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: A chill dude who likes to tinker and explore tech.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Orlando, Florida USA</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,8 +25,19 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Aaron Khan, currently a student at Valencia College pursuing a degree in BAS Computer Technology Cloud Computing. I also maintain a website where I write articles and guides about IT and personal interests. Furthermore, I enjoy building computer systems and configuring operating systems, whether it's for gaming or experimenting with different Linux distributions. Also, I have experience with cloud computing and particularly interested in virtual servers. In high school, I took college-level classes and became certified in CompTIA IT Fundamentals and Entrepreneurship and Small Business. I am known as the "tech guy" in the family and enjoys teaching them about technology. I joined the Phi Theta Kappa honor society, which offers benefits like hotel discounts.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/badges/comptia-it-fundamentals-itf-certification.1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/badges/aws-academy-graduate-aws-academy-cloud-foundations.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/badges/aws-cloud-quest-cloud-practitioner.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0"> 
+        {% include figure.liquid path="assets/img/badges/aws-academy-graduate-aws-academy-cloud-architecting.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
