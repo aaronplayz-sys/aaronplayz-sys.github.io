@@ -1,21 +1,21 @@
-# this file uses prebuilt image in dockerhub
 services:
-  jekyll:
-    image: amirpourmand/al-folio:latest
-    build: .
-    # uncomment these if you are having this issue with the build:
-    # /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
-    # and fill the args values with the output of the commands on the right
-    # build:
-    #   args:
-    #     GROUPID: # id -g
-    #     GROUPNAME: # id -gn
-    #     USERID: # id -u
-    #     USERNAME: # echo $USER
+  docs:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: frontier-biz-docs:latest
     ports:
-      - 8080:8080
-      - 35729:35729
+      - "4000:4000"
+      - "35729:35729" # LiveReload port
     volumes:
-      - .:/srv/jekyll
+      - .:/usr/src/app
+      # This prevents your local gems/metadata from overwriting 
+      # the gems installed inside the container:
+      - /usr/src/app/.jekyll-cache
+      - /usr/src/app/_site
     environment:
-      - JEKYLL_ENV=development
+      # Switch to 'development' to enable the auto-restart on _config.yml change
+      - JEKYLL_ENV=development 
+    stdin_open: true # Allows you to interact with the jekyll process if needed
+    tty: true        # Enables colored logs in your terminal
+    
