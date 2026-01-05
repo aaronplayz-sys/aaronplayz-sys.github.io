@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-how-to-get-started-in-it-part-1-the-foundations",
+        },{id: "post-how-to-get-started-in-it-part-2-virtualization-and-operating-systems",
+        
+          title: "How to Get Started in IT! Part 2 - Virtualization and Operating Systems...",
+        
+        description: "In this second part, we dive into the world of virtualization, why it&#39;s a game-changer for learning, and how to choose your first operating system to explore.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/how-to-get-started-in-it-part2/";
+          
+        },
+      },{id: "post-how-to-get-started-in-it-part-1-the-foundations",
         
           title: "How to Get Started in IT! Part 1 - The Foundations",
         
@@ -148,6 +159,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-refactored-site-to-be-up-to-date-with-the-theme-s-v0-14-7-update-and-taking-the-time-to-redo-my-getting-started-in-it-series-posted-part-1-in-the-blog",
           title: 'Refactored site to be up-to-date with the theme’s v0.14.7 update and taking the...',
+          description: "",
+          section: "News",},{id: "news-posted-part-2-in-my-geting-started-in-it-series-in-this-post-we-focus-on-virtualization-and-operating-systems-read-this-post",
+          title: 'Posted part 2 in my geting started in IT series. In this post...',
           description: "",
           section: "News",},{id: "projects-frontier-biz-guide-website",
           title: 'Frontier Biz Guide Website',
