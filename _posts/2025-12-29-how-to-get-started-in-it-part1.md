@@ -70,4 +70,4 @@ Starting in IT can feel overwhelming, but here are some practical first steps to
 
 This is just the beginning! In the next part of this series, we will delve deeper into setting up your first virtual environment and exploring different operating systems.
 
-> Continue to Part 2: [Link will be here once Part 2 is created]
+> Continue to Part 2: [How to Get Started in IT! Part 2 - Virtualization and Operating Systems](https://aaronplayzgaming.com/blog/2026/how-to-get-started-in-it-part2/)
