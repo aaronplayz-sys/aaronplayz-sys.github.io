@@ -69,4 +69,4 @@ I personally use VMs to test code changes (e.g. this website) before making them
 
 In **Part 3**, we'll move beyond the desktop and talk about **Servers, VPS, and the basics of Cloud Computing**.
 
-> Continue to Part 3: [Link will be here once Part 3 is created]
+> Continue to Part 3: [How to Get Started in IT! Part 3 - Servers, VPS, and the Cloud](https://aaronplayzgaming.com/blog/2026/how-to-get-started-in-it-part3/)
