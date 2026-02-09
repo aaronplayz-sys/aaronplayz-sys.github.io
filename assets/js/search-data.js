@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-how-to-get-started-in-it-part-2-virtualization-and-operating-systems",
+        },{id: "post-how-to-get-started-in-it-part-3-servers-vps-and-the-cloud",
+        
+          title: "How to Get Started in IT! Part 3 - Servers, VPS, and the...",
+        
+        description: "Moving beyond the local desktop, we explore what servers are, the benefits of Virtual Private Servers (VPS), and a beginner-friendly introduction to Cloud Computing.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/how-to-get-started-in-it-part3/";
+          
+        },
+      },{id: "post-how-to-get-started-in-it-part-2-virtualization-and-operating-systems",
         
           title: "How to Get Started in IT! Part 2 - Virtualization and Operating Systems...",
         
@@ -162,6 +173,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-posted-part-2-in-my-geting-started-in-it-series-in-this-post-we-focus-on-virtualization-and-operating-systems-read-this-post",
           title: 'Posted part 2 in my geting started in IT series. In this post...',
+          description: "",
+          section: "News",},{id: "news-part-3-in-my-geting-started-in-it-series-is-released-in-this-post-we-look-into-servers-vps-and-the-cloud-read-this-post",
+          title: 'Part 3 in my geting started in IT series is released. In this...',
           description: "",
           section: "News",},{id: "projects-frontier-biz-guide-website",
           title: 'Frontier Biz Guide Website',
