@@ -41,7 +41,7 @@ It also turned out that others in our community (full disclosure I am considered
 
 ## December 2025 Update
 
- All guides are written, some are pending to be rewritten and reviewed, mainly the map guides. Most guide channels in the Discord server have been moved to an archived category and will be deleted once guide creation is considered complete. Finally, the website is the offical way to read our guides.
+All guides are written, some are pending to be rewritten and reviewed, mainly the map guides. Most guide channels in the Discord server have been moved to an archived category and will be deleted once guide creation is considered complete. Finally, the website is the offical way to read our guides.
 
 ## Progress
 
@@ -65,19 +65,19 @@ It also turned out that others in our community (full disclosure I am considered
   - [x] Leveling Weapons (9/19/2025)
   - [x] Boost (9/19/2025)
 - [x] Titan Guides (Section completed on 10/12/2025)
-    - [x] Universal Mechanics Abilities
-    - [x] Titainfall and Their Kits
-    - [x] Titan Kit
-    - [x] Aegis
-    - [x] Titan survivability
-    - [x] Ion
-    - [x] Scorch
-    - [x] Northstar
-    - [x] Ronin
-    - [x] Tone
-    - [x] Legion
-    - [x] Monarch
-- [ ] Frontier Defense Enemy Guides
+  - [x] Universal Mechanics Abilities
+  - [x] Titainfall and Their Kits
+  - [x] Titan Kit
+  - [x] Aegis
+  - [x] Titan survivability
+  - [x] Ion
+  - [x] Scorch
+  - [x] Northstar
+  - [x] Ronin
+  - [x] Tone
+  - [x] Legion
+  - [x] Monarch
+- [x] Frontier Defense Enemy Guides
   - [x] Enemy Guide Terms (10/13/2025)
   - [x] Universal Mechanics Abilities (10/13/2025)
   - [x] Threat Tier List (10/15/2025)
@@ -100,18 +100,18 @@ It also turned out that others in our community (full disclosure I am considered
   - [x] Nuke Titan
   - [x] Monarch
 - [ ] Frontier Defense Map Guides
-  - [ ] Minimap guide
-  - [ ] Map Legend
-  - [ ] Difficulty Guide
-  - [ ] Forwardbase Kodai
-  - [ ] Homestead
-  - [ ] Exo Planet
-  - [ ] Backwater Canal
-  - [ ] Drydock
-  - [ ] Angel City
-  - [ ] Colony
-  - [ ] War Games
-  - [ ] Rise
-  - [ ] Multiplayer Map Callouts
+  - [x] Minimap guide
+  - [x] Map Legend
+  - [x] Difficulty Guide
+  - [x] Forwardbase Kodai
+  - [x] Homestead
+  - [x] Exo Planet
+  - [x] Backwater Canal
+  - [x] Drydock
+  - [ ] Angel City (Yet to be written)
+  - [ ] Colony (Yet to be written)
+  - [ ] War Games (Yet to be written)
+  - [ ] Rise (Yet to be written)
+- [x] Multiplayer Map Callouts
 
 [only editor]: https://aaronplayzgaming.com/frontier-biz/credits/

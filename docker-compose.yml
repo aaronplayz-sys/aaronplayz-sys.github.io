@@ -3,7 +3,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: frontier-biz-docs:latest
+    image: aafolio:latest
     ports:
       - "4000:4000"
       - "35729:35729" # LiveReload port
