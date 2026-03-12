@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-how-to-get-started-in-it-part-3-servers-vps-and-the-cloud",
+        },{id: "post-how-to-get-started-in-it-part-4-the-magic-of-containers-with-docker",
+        
+          title: "How to Get Started in IT! Part 4 - The Magic of Containers...",
+        
+        description: "We explore containerization, a technology that has revolutionized software development, and provide a hands-on introduction to Docker.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/how-to-get-started-in-it-part4/";
+          
+        },
+      },{id: "post-how-to-get-started-in-it-part-3-servers-vps-and-the-cloud",
         
           title: "How to Get Started in IT! Part 3 - Servers, VPS, and the...",
         
@@ -177,6 +188,9 @@ ninja.data = [{
           section: "News",},{id: "news-part-3-in-my-geting-started-in-it-series-is-released-in-this-post-we-look-into-servers-vps-and-the-cloud-read-this-post",
           title: 'Part 3 in my geting started in IT series is released. In this...',
           description: "",
+          section: "News",},{id: "news-a-wave-of-updates-has-arrived-part-4-of-the-how-to-get-started-in-it-series-focusing-on-docker-and-containers-is-now-live-i-ve-also-added-a-new-classwork-category-to-the-projects-page-featuring-a-presentation-on-exploring-coral-reefs-additionally-the-frontier-biz-guides-for-angel-city-and-colony-are-complete-with-further-rewrites-for-accuracy-in-progress",
+          title: 'A wave of updates has arrived! Part 4 of the “How to Get...',
+          description: "",
           section: "News",},{id: "projects-frontier-biz-guide-website",
           title: 'Frontier Biz Guide Website',
           description: "",
@@ -197,6 +211,11 @@ ninja.data = [{
           description: "A college project I worked on with classmates to create a web app from bottom up with a database.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/greenliongamingstore/";
+            },},{id: "projects-exploring-coral-reefs-presentation",
+          title: 'Exploring Coral Reefs Presentation',
+          description: "My presentation for intro to environmental science",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/presentation/";
             },},{id: "projects-ranger",
           title: 'Ranger',
           description: "A multi purpose discord bot with only slash commands!",
