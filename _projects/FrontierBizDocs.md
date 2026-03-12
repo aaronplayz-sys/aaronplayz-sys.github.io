@@ -15,7 +15,7 @@ Repository: [https://github.com/aaronplayz-sys/frontier-biz/tree/main](https://g
 
 ## The inspiration
 
-Being part of a gaming community called "Frontier Biz" we wanted to put our Knowle together and make guides so it is easier on those struggling to reach higher difficulties in Titianfall 2.
+Being part of a gaming community called "Frontier Biz" we wanted to put our Knowlege together and make guides so it is easier on those struggling to reach higher difficulties in Titianfall 2.
 
 ## Initially making a website was thrown out the window
 
@@ -42,6 +42,10 @@ It also turned out that others in our community (full disclosure I am considered
 ## December 2025 Update
 
 All guides are written, some are pending to be rewritten and reviewed, mainly the map guides. Most guide channels in the Discord server have been moved to an archived category and will be deleted once guide creation is considered complete. Finally, the website is the offical way to read our guides.
+
+## March 2026 Update
+
+A few more map guides has been written, the remaining two are in the works. A few people in the community discord server has noted that there are common grammar issues and inconsistencies in the guides, this was expected as the more people we meet and bring to our discord server also gives knowlege as well. Many of the guides from last year will go through a final rewite or be corrected. Once this is done, guide writing will come to a close. It will open new doors such as a YouTube channel, allowing us to create more uniqe content beyond the guides.
 
 ## Progress
 
@@ -108,8 +112,8 @@ All guides are written, some are pending to be rewritten and reviewed, mainly th
   - [x] Exo Planet
   - [x] Backwater Canal
   - [x] Drydock
-  - [ ] Angel City (Yet to be written)
-  - [ ] Colony (Yet to be written)
+  - [x] Angel City
+  - [x] Colony
   - [ ] War Games (Yet to be written)
   - [ ] Rise (Yet to be written)
 - [x] Multiplayer Map Callouts

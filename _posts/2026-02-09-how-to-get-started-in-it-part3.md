@@ -68,4 +68,4 @@ Understanding the shift from your local PC to remote servers and eventually the 
 
 In **Part 4**, we'll dive into **Containerization (Docker)** and why it's slowly replacing traditional VMs in the modern workplace!
 
-> Continue to Part 4: [Link will be here once Part 4 is created]
+> Continue to Part 4: [The Magic of Containers with Docker](https://aaronplayzgaming.com/blog/2026/how-to-get-started-in-it-part4/)

@@ -15,6 +15,7 @@ services:
       - /usr/src/app/_site
     environment:
       # Switch to 'development' to enable the auto-restart on _config.yml change
+      # Note: You can also set this to 'production' if you want to test the production build locally
       - JEKYLL_ENV=development 
     stdin_open: true # Allows you to interact with the jekyll process if needed
     tty: true        # Enables colored logs in your terminal
