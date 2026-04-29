@@ -206,6 +206,11 @@ ninja.data = [{
           description: "My discord bot using Red Discord Bot and making cogs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/RoboCop/";
+            },},{id: "projects-game-backlog-tracker",
+          title: 'Game Backlog Tracker',
+          description: "A tracker for my gaming backlog",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/game-backlog-tracker/";
             },},{id: "projects-green-lion-gaming-store",
           title: 'Green Lion Gaming Store',
           description: "A college project I worked on with classmates to create a web app from bottom up with a database.",
