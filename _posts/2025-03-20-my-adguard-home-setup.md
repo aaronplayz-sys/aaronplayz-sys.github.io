@@ -86,15 +86,12 @@ Statistics retention: 30 days
 > {: .block-tip }
 
 ```bash
-h3://dns.cloudflare.com/dns-query
+h3://cloudflare-dns.com/dns-query
 h3://1.1.1.1/dns-query
 h3://1.0.0.1/dns-query
-h3://[2606:4700:4700::1111]/dns-query
-h3://[2606:4700:4700::1001]/dns-query
 h3://unfiltered.adguard-dns.com/dns-query
 h3://94.140.14.140/dns-query
 h3://94.140.14.141/dns-query
-h3://dns.nextdns.io/
 ```
 
 > ##### TIP
@@ -129,17 +126,17 @@ Leave this entry empty, servers listed above will be used to resolve DNS request
 #### Upstream timeout
 
 ```bash
-1000
+10
 ```
 
 #### DNS server configuration:
 
 > ##### TIP
 >
-> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. I use 1000 because it is near impossible to hit this limit when deploying this in a public setting like at an office or running a homelab.
+> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. 0 disables the rate limit entirely, which is useful for homelabs or environments where you don't want to worry about being throttled.
 > {: .block-tip }
 
-Rate limit: 1000
+Rate limit: 0
 
 Subnet prefix length for IPv4 addresses: 24 (default)
 
@@ -163,10 +160,10 @@ Blocked response TTL: 10
 Cache size (in bytes):
 
 ```bash
-10000000
+67108864
 ```
 
-Leave override minimum and maximum TTL empty
+Leave override minimum and maximum TTL empty or set to zero.
 
 Enable Optimistic caching
 
@@ -191,7 +188,7 @@ This setting is particularly useful if you want to customize blocked services, s
 
 ### DHCP settings
 
-It is only recommeded to use this feature if your router like ones from AT&T, it can be benefital to use this to get around this roadblock of havig to configure every device on your network.
+It is only recommeded to use this feature if your router like ones from ISP like AT&T, it can be benefital to use this to get around this roadblock of havig to configure every device on your network.
 
 #### DHCP IPv4 Settings
 
@@ -222,11 +219,12 @@ Lucky for us the lists I am using are in this list.
 
 Go ahead and put a checkmark on the following:
 
-- HaGeZi's Pro Blocklist
-- WindowsSpyBlocker
-- Dandilion Sprout's Anti-Malware List
 - HaGeZi's Threat Intelligence Feeds
+- HaGeZi - Multi PRO
+- Dandelion Sprout's Anti-Malware List
 - Phishing URL Blocklist (PhishTank and OpenPhish)
+- AdGuard Mobile Ads filter
+- HaGeZi's Windows/Office Tracker Blocklist
 
 These lists should give you an overall good protection against ads, trackers, and malware. However, **not all ads** can be **blocked at the DNS level**. You will need a extension/addon to take care of the ads that aren't blocked by AdGuard Home.
 
@@ -253,9 +251,15 @@ Add the following domains to the page exactly as you see it in the table below.
 | `*.discount` | `0.0.0.0` |
 | `*.gdn`      | `0.0.0.0` |
 | `*.loan`     | `0.0.0.0` |
-| `*.loans`    | `0.0.0.0` |
 | `*.ooo`      | `0.0.0.0` |
 | `*.sbs`      | `0.0.0.0` |
+
+I also use this for internal services in my homelab:
+
+| Domain              | Answer         |
+| ------------------- | -------------- |
+| `raspberrypi.local` | `192.168.1.77` |
+| `nextcloud.local`   | `192.168.1.78` |
 
 The `*` is used as a wildcard, targeting every domain regardless if the domain has a subdomain. The answer `0.0.0.0` leads to nowhere, thus being unable to resolve the domain.
 
