@@ -20,6 +20,9 @@ RUN apt-get update -y && \
     nodejs \
     npm \
     procps \
+    python3 \
+    python3-pip \
+    python3-venv \
     zlib1g-dev && \
     # Set up locales
     sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
@@ -46,6 +49,12 @@ RUN gem install bundler && \
 # --- Node packages (cached layer) ---
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
+
+# --- Python packages (cached layer) ---
+COPY requirements.txt ./
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN pip install --no-cache-dir -r requirements.txt jupyter
 
 # --- Application code ---
 COPY . .
