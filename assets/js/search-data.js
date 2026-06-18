@@ -191,6 +191,9 @@ ninja.data = [{
           section: "News",},{id: "news-a-wave-of-updates-has-arrived-part-4-of-the-how-to-get-started-in-it-series-focusing-on-docker-and-containers-is-now-live-i-ve-also-added-a-new-classwork-category-to-the-projects-page-featuring-a-presentation-on-exploring-coral-reefs-additionally-the-frontier-biz-guides-for-angel-city-and-colony-are-complete-with-further-rewrites-for-accuracy-in-progress",
           title: 'A wave of updates has arrived! Part 4 of the “How to Get...',
           description: "",
+          section: "News",},{id: "news-updated-my-post-on-my-adguard-home-config-to-reflect-my-current-settings-most-changes-are-very-subtle-not-huge-just-minor-tweaks-for-efficiency-i-also-added-my-betterfox-updater-project-to-the-projects-page",
+          title: 'Updated my post on my Adguard Home config to reflect my current settings....',
+          description: "",
           section: "News",},{id: "projects-frontier-biz-guide-website",
           title: 'Frontier Biz Guide Website',
           description: "",
@@ -206,6 +209,11 @@ ninja.data = [{
           description: "My discord bot using Red Discord Bot and making cogs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/RoboCop/";
+            },},{id: "projects-betterfox-updater",
+          title: 'Betterfox Updater',
+          description: "A cross-platform utility to automate Betterfox installation with custom overrides and hardware detection.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/betterfox-updater/";
             },},{id: "projects-game-backlog-tracker",
           title: 'Game Backlog Tracker',
           description: "A tracker for my gaming backlog",
