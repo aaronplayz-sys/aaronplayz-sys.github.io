@@ -3,8 +3,8 @@ layout: page
 title: Frontier Biz Guide Website
 description:
 img: assets/img/fbiz.png
-importance: 6
-category: Other
+importance: 2
+category: Personal
 ---
 
 ## Frontier Biz Guide Website Link

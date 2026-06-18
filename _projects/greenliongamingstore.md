@@ -4,7 +4,7 @@ title: Green Lion Gaming Store
 description: A college project I worked on with classmates to create a web app from bottom up with a database.
 img: assets/img/greenliongaming/GreenLionGamingPage.png
 importance: 5
-category: Other
+category: Classwork
 ---
 
 Source code: [GitHub](https://github.com/Green-Lion-Gaming/GreenLionGamingWebsite)

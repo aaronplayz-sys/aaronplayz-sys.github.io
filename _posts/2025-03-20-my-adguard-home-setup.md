@@ -55,14 +55,14 @@ Optional: Enable AdGuard parental control web service
 > ##### TIP
 >
 > Logs can be handy when needing to whitelist domains.
-> Set the rotation lower if you wish.
+> Keeping logs longer may not be suitable for most people
 > {: .block-tip }
 
 Enable log(on by default):
 
 Optional: Anonymize client IP
 
-Query logs rotation: 30 days
+Query logs rotation: 24 hours
 
 > ##### TIP
 >
@@ -72,7 +72,7 @@ Query logs rotation: 30 days
 
 Enable statistics (on by default):
 
-Statistics retention: 30 days
+Statistics retention: 7 days
 
 ## Settings
 
@@ -82,16 +82,16 @@ Statistics retention: 30 days
 
 > ##### TIP
 >
-> h3 is DNS-over-HTTPS with forced HTTP/3 and no fallback to HTTP/2 or below
+> h3 is DNS-over-HTTPS with forced HTTP/3 and no fallback to HTTP/2 or below.
+> 
+> quic is DNS-over-QUIC, it provides the same privacy as DNS over TLS (DoT) but offers superior performance by establishing connections in a single round-trip with delivery up 10% faster than other protocols. Keep in mind this protocol is newer than the others so having h3 as a backup failover incase certain domains do not resolve with QUIC properly is best.
 > {: .block-tip }
 
 ```bash
+quic://p0.freedns.controld.com
+h3://freedns.controld.com/p0
+quic://unfiltered.adguard-dns.com
 h3://cloudflare-dns.com/dns-query
-h3://1.1.1.1/dns-query
-h3://1.0.0.1/dns-query
-h3://unfiltered.adguard-dns.com/dns-query
-h3://94.140.14.140/dns-query
-h3://94.140.14.141/dns-query
 ```
 
 > ##### TIP
@@ -113,30 +113,29 @@ Leave this entry empty, servers listed above will be used to resolve DNS request
 > {: .block-tip }
 
 ```bash
-1.1.1.1
-1.0.0.1
-2606:4700:4700::1111
-2606:4700:4700::1001
 94.140.14.140
-94.140.14.141
 2a10:50c0::1:ff
-2a10:50c0::2:ff
+1.1.1.1
+2606:4700:4700::1111
+76.76.2.11
+2606:1a40::11
 ```
 
 #### Upstream timeout
 
 ```bash
-10
+5
 ```
+Default is higher, the longer adguard home waits for a response the longer it takes to resolve domains.
 
 #### DNS server configuration:
 
 > ##### TIP
 >
-> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. 0 disables the rate limit entirely, which is useful for homelabs or environments where you don't want to worry about being throttled.
+> Rate limit is per client/device per second. 20 is a good starting point, you may want to increase this. 0 disables the rate limit entirely, which is useful for homelabs or environments where you don't want to worry about being throttled. However a good limit around 100 - 200 is great to keep rogue IoT devices from doing an internal DDoS attack like with DNS request from trying to do domain lookups.
 > {: .block-tip }
 
-Rate limit: 0
+Rate limit: 200
 
 Subnet prefix length for IPv4 addresses: 24 (default)
 
@@ -148,12 +147,12 @@ Enable DNSSEC
 
 > ##### TIP
 >
-> AdGuard Home understands several types of syntax, Null IP ensures what we want blocked is blocked
+> AdGuard Home understands several types of syntax.
 > {: .block-tip }
 
-Blocking mode: Null IP
+Blocking mode: Default
 
-Blocked response TTL: 10
+Blocked response TTL: 300
 
 #### DNS cache configuration:
 
@@ -163,13 +162,13 @@ Cache size (in bytes):
 67108864
 ```
 
-Leave override minimum and maximum TTL empty or set to zero.
+Leave override minimum and maximum TTL empty or set to zero. This makes Adguard Home respect upstream's TTL's
 
 Enable Optimistic caching
 
 > ##### TIP
 >
-> I recommend clearing the cache occasionally if loading times feel slow.
+> I recommend clearing the cache every 6 months if loading times feel slow.
 > {: .block-tip }
 
 #### Access settings:
@@ -188,7 +187,7 @@ This setting is particularly useful if you want to customize blocked services, s
 
 ### DHCP settings
 
-It is only recommeded to use this feature if your router like ones from ISP like AT&T, it can be benefital to use this to get around this roadblock of havig to configure every device on your network.
+It is only recommeded to use this feature if your router like ones from ISP like AT&T not giving you the ability to change DNS, it can be benefital to use this to get around this roadblock of havig to configure every device on your network.
 
 #### DHCP IPv4 Settings
 
@@ -223,8 +222,10 @@ Go ahead and put a checkmark on the following:
 - HaGeZi - Multi PRO
 - Dandelion Sprout's Anti-Malware List
 - Phishing URL Blocklist (PhishTank and OpenPhish)
-- AdGuard Mobile Ads filter
+- Dandelion Sprout's Game Console Adblock List
 - HaGeZi's Windows/Office Tracker Blocklist
+- Scam Blocklist by DurableNapkin
+- Stalkerware Indicators List
 
 These lists should give you an overall good protection against ads, trackers, and malware. However, **not all ads** can be **blocked at the DNS level**. You will need a extension/addon to take care of the ads that aren't blocked by AdGuard Home.
 
@@ -297,7 +298,5 @@ This is it, my config. Feel free to use it as a base or use it as is.
 AdguardTeam. (2023a, April 18). DHCP. GitHub. https://github.com/AdguardTeam/AdGuardHome/wiki/DHCP
 
 AdguardTeam. (2023b, August 30). Encryption. GitHub. https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption
-
-yokoffing. (2022). Setup guide for NextDNS, a DoH proxy with advanced capabilities. GitHub. https://github.com/yokoffing/NextDNS-Config
 
 yokoffing. (2022). Setup guide for NextDNS, a DoH proxy with advanced capabilities. GitHub. https://github.com/yokoffing/NextDNS-Config
