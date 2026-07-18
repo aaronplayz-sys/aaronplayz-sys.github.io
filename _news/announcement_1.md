@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2022-6-14
+date: 2015-10-22 15:59:00-0400
 inline: true
+related_posts: false
 ---
 
-My website is now a static website hosted on GitHub!
+A simple inline announcement.
