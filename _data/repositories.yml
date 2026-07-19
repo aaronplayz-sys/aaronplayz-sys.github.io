@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - aaronplayz-sys
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - aaronplayz-sys/frontier-biz
+  - aaronplayz-sys/game-backlog-tracker
+  - aaronplayz-sys/betterfox-updater
+  - aaronplayz-sys/RoboCop
+  - aaronplayz-sys/GreenLionGamingWebsite
