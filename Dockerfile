@@ -1,71 +1,76 @@
-FROM ruby:3.4.10-slim
+FROM ruby:slim
 
-ENV DEBIAN_FRONTEND=noninteractive
+# uncomment these if you are having this issue with the build:
+# /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
+# ARG GROUPID=901
+# ARG GROUPNAME=ruby
+# ARG USERID=901
+# ARG USERNAME=jekyll
 
-LABEL authors="aaronplayz-sys" \
-      description="Docker image for Frontier Biz guides (Dev & Prod)" \
-      version="1.1.0"
+ENV DEBIAN_FRONTEND noninteractive
 
-# Install system dependencies
+LABEL authors="Amir Pourmand,George Araújo" \
+      description="Docker image for al-folio academic template" \
+      maintainer="Amir Pourmand"
+
+# uncomment these if you are having this issue with the build:
+# /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
+# add a non-root user to the image with a specific group and user id to avoid permission issues
+# RUN groupadd -r $GROUPNAME -g $GROUPID && \
+#     useradd -u $USERID -m -g $GROUPNAME $USERNAME
+
+# install system dependencies
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-    build-essential \
-    curl \
-    git \
-    imagemagick \
-    libmagickwand-dev \
-    pkg-config \
-    locales \
-    inotify-tools \
-    nodejs \
-    npm \
-    procps \
-    python3 \
-    python3-pip \
-    python3-venv \
-    zlib1g-dev && \
-    # Set up locales
-    sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
-    locale-gen en_US.UTF-8 && \
-    # Clean up cache
-    apt-get clean && \
-    apt-get autoclean && \
-    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives /var/tmp/*
+        build-essential \
+        curl \
+        git \
+        imagemagick \
+        inotify-tools \
+        locales \
+        nodejs \
+        procps \
+        python3-pip \
+        zlib1g-dev && \
+    pip --no-cache-dir install --upgrade --break-system-packages nbconvert
 
+# clean up
+RUN apt-get clean && \
+    apt-get autoremove && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*  /tmp/*
+
+# set the locale
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
+    locale-gen
+
+# set environment variables
 ENV EXECJS_RUNTIME=Node \
     JEKYLL_ENV=production \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US:en \
-    LC_ALL=en_US.UTF-8 \
-    NODE_ENV=production
+    LC_ALL=en_US.UTF-8
 
-WORKDIR /usr/src/app
+# create a directory for the jekyll site
+RUN mkdir /srv/jekyll
 
-# --- Ruby gems (cached layer) ---
-COPY Gemfile Gemfile.lock ./
-RUN gem install bundler && \
-    bundle install --jobs=4 --retry=3
+# copy the Gemfile and Gemfile.lock to the image
+ADD Gemfile.lock /srv/jekyll
+ADD Gemfile /srv/jekyll
 
-# --- Node packages (cached layer) ---
-COPY package.json package-lock.json ./
-RUN npm ci --omit=dev
+# set the working directory
+WORKDIR /srv/jekyll
 
-# --- Python packages (cached layer) ---
-COPY requirements.txt ./
-RUN python3 -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-RUN pip install --no-cache-dir -r requirements.txt jupyter
+# install jekyll and dependencies
+RUN gem install --no-document jekyll bundler
+RUN bundle install --no-cache
 
-# --- Application code ---
-COPY . .
+EXPOSE 8080
 
-# Strip Windows line endings (CRLF → LF), install entrypoint to standard bin path, and make executable
-RUN sed -i 's/\r//' bin/entrypoint.sh && \
-    install -m 755 bin/entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY bin/entry_point.sh /tmp/entry_point.sh
 
-EXPOSE 4000 35729
+# uncomment this if you are having this issue with the build:
+# /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
+# set the ownership of the jekyll site directory to the non-root user
+# USER $USERNAME
 
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:4000 || exit 1
-
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["/tmp/entry_point.sh"]

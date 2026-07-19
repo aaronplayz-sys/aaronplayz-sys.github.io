@@ -1,12 +1,11 @@
 github_users:
   - aaronplayz-sys
 
+repo_description_lines_max: 2
+
 github_repos:
-  - alshedivat/al-folio
-  - aaronplayz-sys/RoboCop
-  - aaronplayz-sys/ranger
-  - aaronplayz-sys/aquaclan-modpack
   - aaronplayz-sys/frontier-biz
-  - aaronplayz-sys/Aqua-Clan
   - aaronplayz-sys/game-backlog-tracker
   - aaronplayz-sys/betterfox-updater
+  - aaronplayz-sys/RoboCop
+  - aaronplayz-sys/GreenLionGamingWebsite

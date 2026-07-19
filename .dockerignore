@@ -1,28 +1,3 @@
-# Git
-.git
-.gitignore
-
-# Jekyll outputs and caches
 _site/
-.jekyll-cache/
-.jekyll-metadata
-
-# Local Ruby environment
-vendor/
-.bundle/
-
-# Node
-node_modules/
-
-# Docker files
-Dockerfile
-docker-compose.yml
-.dockerignore
-
-# Editor & CI
-.vscode/
-.github/
-*.log
-
-# OS files
-.DS_Store
+.git/
+assets/
