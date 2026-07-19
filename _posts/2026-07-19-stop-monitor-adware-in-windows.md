@@ -2,9 +2,9 @@
 layout: post
 title: "Stop Windows from Silent-Installing Adware via Your Monitor"
 description: "How Windows uses Device Companion Apps to sneak vendor bloatware onto your system—and how to permanently block it using the registry or group policy."
-date: 2026-07-19 12:00:00
+date: 2026-07-19
 categories: tech-guides windows
-giscus_comments: true
+giscus_comments: false
 related_posts: false
 toc:
   sidebar: left
